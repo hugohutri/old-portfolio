@@ -1,23 +1,12 @@
 import { FC } from "react";
+import Button from "./Button";
 
 const ButtonRow: FC<{}> = () => {
   return (
     <div className="row button-row">
-      <div className="four columns">
-        <a className="button u-full-width" href="/projects">
-          Projects
-        </a>
-      </div>
-      <div className="four columns">
-        <a className="button u-full-width" href="/projects">
-          Projects
-        </a>
-      </div>
-      <div className="four columns">
-        <a className="button u-full-width" href="/projects">
-          Projects
-        </a>
-      </div>
+      <Button href="/projects">Projektit</Button>
+      <Button href="/projects">Taidot</Button>
+      <Button href="/projects">Ota yhteyttä</Button>
     </div>
   );
 };
