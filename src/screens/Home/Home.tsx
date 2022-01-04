@@ -1,5 +1,6 @@
 import { FC } from "react";
 import AboutMe from "./components/AboutMe";
+import ButtonRow from "./components/ButtonRow";
 import Name from "./components/Name";
 import ProfilePicture from "./components/ProfilePicture";
 import SocialMedia from "./components/SocialMedia";
@@ -9,12 +10,13 @@ interface HomeProps {}
 
 const Home: FC<HomeProps> = () => {
   return (
-    <div className="container">
+    <div className="container page">
       <Name />
-      <AboutMe />
       <ProfilePicture />
+      <AboutMe />
       <SocialMedia />
       <hr />
+      <ButtonRow />
     </div>
   );
 };

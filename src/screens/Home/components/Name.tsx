@@ -7,7 +7,7 @@ const NAME = "Hugo Hutri";
  * Get a random delay for the typewriter effect (100ms - 200ms)
  * @returns Time in milliseconds
  */
-const getRandomDelay = () => 100 + Math.random() * 100;
+const getRandomDelay = () => 140 + Math.random() * 100;
 
 const waitRandomDelay = async () => {
   return new Promise((resolve) => setTimeout(resolve, getRandomDelay()));
@@ -17,7 +17,7 @@ const waitRandomDelay = async () => {
  * My name with typewriter effect
  */
 const Name: FC<{}> = () => {
-  const [cursorPosition, setCursorPosition] = useState(0);
+  const [cursorPosition, setCursorPosition] = useState(1);
 
   // Move the cursor
   useEffect(() => {
@@ -25,7 +25,7 @@ const Name: FC<{}> = () => {
     waitRandomDelay().then(() => setCursorPosition(cursorPosition + 1));
   }, [cursorPosition]);
 
-  const partOfName = NAME.substring(0, cursorPosition);
+  const partOfName = NAME.substring(0, cursorPosition).padEnd(NAME.length, " ");
 
   return <div className="name">{partOfName}</div>;
 };

@@ -10,12 +10,13 @@ body {
 
 * {
   color: #dddddd;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 html {
-  background: linear-gradient(130deg, rgb(0, 59, 61), rgb(0, 0, 0)) no-repeat
-    center center fixed;
+  /* background: linear-gradient(130deg, rgb(0, 59, 61), rgb(0, 0, 0)) no-repeat
+    center center fixed; */
+  background: url(assets/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
