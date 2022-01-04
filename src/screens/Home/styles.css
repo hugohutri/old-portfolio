@@ -51,9 +51,9 @@
 
 .page {
   padding: 3% !important;
-  height: min(100vh, 100%);
+  height: max(100vh, 100%);
   backdrop-filter: blur(13px);
-  background-color: #0009;
+  background-color: #0008;
 }
 
 .center-content {
