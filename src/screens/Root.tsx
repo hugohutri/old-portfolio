@@ -1,19 +1,29 @@
 import React from "react";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "skeleton-css/css/normalize.css";
 import "skeleton-css/css/skeleton.css";
 import PageContainer from "./PageContainer";
 import Projects from "./Projects/Projects";
 
 // Add Route here if needed
+/* 
+<HashRouter>
+    <Routes>
+        <Route path="/" element={<PageContainer />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/moi" element={<p>Moi</p>} />
+    </Routes>
+</HashRouter> 
+*/
 
 const Root = () => (
-  <HashRouter>
+  <BrowserRouter basename="/portfolio">
     <Routes>
       <Route path="/" element={<PageContainer />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/moi" element={<p>Moi</p>} />
     </Routes>
-  </HashRouter>
+  </BrowserRouter>
 );
+
 export default Root;

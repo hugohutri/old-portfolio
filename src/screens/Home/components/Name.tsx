@@ -1,5 +1,15 @@
 import { useEffect } from "react";
 import { FC, useState } from "react";
+import styled from "styled-components";
+
+const StyledName = styled.div`
+  width: 100%;
+  text-align: center;
+  font-size: max(min(13vw, 160px), 50px);
+  font-family: "Roboto", sans-serif;
+  padding-top: 5%;
+  padding-bottom: 5%;
+`;
 
 const NAME = "Hugo Hutri";
 
@@ -27,7 +37,7 @@ const Name: FC<{}> = () => {
 
   const partOfName = NAME.substring(0, cursorPosition).padEnd(NAME.length, " ");
 
-  return <div className="name">{partOfName}</div>;
+  return <StyledName>{partOfName}</StyledName>;
 };
 
 export default Name;

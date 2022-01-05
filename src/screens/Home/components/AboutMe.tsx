@@ -1,8 +1,15 @@
 import { FC } from "react";
+import styled from "styled-components";
+
+const StyledTextContainer = styled.div`
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+`;
 
 const AboutMe: FC<{}> = () => {
   return (
-    <div className="container about-me">
+    <StyledTextContainer className="container">
       <p>
         Hei! Olen Hugo, ja olen ohjelmistokehittäjä Lappeenrannasta. Teen
         pääasiassa Frontend -kehitystä, mutta myös Backend ja mobiilipuolta.
@@ -16,7 +23,7 @@ const AboutMe: FC<{}> = () => {
         Python, Matlab ja AWS. Suosikkikolmikkoni on React, Typescript ja Linux
         :)
       </p>
-    </div>
+    </StyledTextContainer>
   );
 };
 
