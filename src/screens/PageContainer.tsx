@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import Home from "./Home/Home";
+const backgroundImage = require("../assets/bg.jpg");
 
 const Wrapper = styled.div`
   padding: 3%;
@@ -9,11 +10,27 @@ const Wrapper = styled.div`
   background-color: #0008;
 `;
 
+const Background = styled.div`
+  background: url(${backgroundImage});
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+`;
+
 const PageContainer: FC<{}> = () => {
   return (
-    <Wrapper className="container">
-      <Home />
-    </Wrapper>
+    <>
+      <Background />
+      <Wrapper className="container">
+        <Home />
+      </Wrapper>
+    </>
   );
 };
 
