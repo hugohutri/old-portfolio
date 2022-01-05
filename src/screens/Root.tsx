@@ -3,25 +3,21 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "skeleton-css/css/normalize.css";
 import "skeleton-css/css/skeleton.css";
 import PageContainer from "./PageContainer";
-import Projects from "./Projects/Projects";
 
-// Add Route here if needed
+// TODO: Routes
 /* 
 <HashRouter>
     <Routes>
         <Route path="/" element={<PageContainer />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/moi" element={<p>Moi</p>} />
     </Routes>
 </HashRouter> 
 */
 
 const Root = () => (
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<PageContainer />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/portfolio/moi" element={<p>Moi</p>} />
     </Routes>
   </BrowserRouter>
 );

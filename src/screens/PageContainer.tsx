@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import ButtonRow from "./Home/components/ButtonRow";
 import Home from "./Home/Home";
 
 const Wrapper = styled.div`
@@ -14,8 +13,6 @@ const PageContainer: FC<{}> = () => {
   return (
     <Wrapper className="container">
       <Home />
-      <hr />
-      <ButtonRow />
     </Wrapper>
   );
 };
