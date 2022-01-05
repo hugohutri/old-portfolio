@@ -7,7 +7,13 @@ const Wrapper = styled.div`
   padding: 3%;
   height: max(100vh, 100%);
   backdrop-filter: blur(13px);
-  background-color: #0008;
+  -webkit-backdrop-filter: blur(13px);
+  -moz-backdrop-filter: blur(13px);
+  -ms-backdrop-filter: blur(13px);
+  -o-backdrop-filter: blur(13px);
+  backdrop-filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='3'%20/></filter></svg>#blur");
+  backdrop-filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  background-color: #0009;
 `;
 
 const Background = styled.div`

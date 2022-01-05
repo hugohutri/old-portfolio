@@ -19,9 +19,12 @@ const AboutMe: FC<{}> = () => {
       <p>
         Osaamisalueeseeni kuuluu mm. JavaScript/TypeScript, React ja React
         Native, joita olen käyttänyt parin vuoden ajan sekä töissä että omissa
-        projekteissani. Näiden lisäksi hallitsen lukuisia teknologioita Node.js,
-        Python, Matlab ja AWS. Suosikkikolmikkoni on React, Typescript ja Linux
-        :)
+        projekteissani. Näiden lisäksi hallitsen lukuisia teknologioita, kuten
+        Node.js, Python, Matlab ja AWS. Esimerkiksi tämä sivu on rakennettu
+        käyttäen React, TypeScript ja Styled Components. Lähdekoodin löydät{" "}
+        <a href="https://github.com/hugohutri/hugohutri.github.io/tree/main">
+          täältä.
+        </a>
       </p>
     </StyledTextContainer>
   );

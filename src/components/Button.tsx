@@ -15,13 +15,18 @@ const StyledButton = styled.a`
 
 interface ButtonProps {
   onClick?: () => any;
+  href?: string;
   children: string | React.ReactChildren;
 }
 
 const Button: FC<ButtonProps> = (props) => {
   return (
     <div className="four columns">
-      <StyledButton className="button u-full-width" onClick={props.onClick}>
+      <StyledButton
+        className="button u-full-width"
+        onClick={props.onClick}
+        href={props.href}
+      >
         {props.children}
       </StyledButton>
     </div>
