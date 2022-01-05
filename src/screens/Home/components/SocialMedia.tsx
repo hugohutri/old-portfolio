@@ -1,5 +1,20 @@
 import { FC } from "react";
-import { SocialIcon } from "react-social-icons";
+import { SocialIcon as ReactSocialIcon } from "react-social-icons";
+import styled, { keyframes } from "styled-components";
+
+const hoverAnimation = keyframes`
+  0% { transform: scale(1); }
+  40% { transform: scale(1.3); }
+  100% { transform: scale(1.14); }
+`;
+
+const SocialIcon = styled(ReactSocialIcon)`
+  margin: 5px;
+  :hover {
+    transform: scale(1.14);
+    animation: ${hoverAnimation} 0.2s ease-in;
+  }
+`;
 
 const SocialMedia: FC<{}> = () => {
   return (
