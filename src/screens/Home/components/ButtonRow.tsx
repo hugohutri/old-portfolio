@@ -1,12 +1,15 @@
-import { FC } from "react";
-import Button from "./Button";
+import { FC, useContext } from "react";
+import Button from "../../../components/Button";
+import { PageChangerContext } from "../../PageContainer";
 
 const ButtonRow: FC<{}> = () => {
+  const setPage = useContext(PageChangerContext);
+
   return (
     <div className="row button-row">
-      <Button href="/projects">Projektit</Button>
-      <Button href="/projects">Taidot</Button>
-      <Button href="/projects">Ota yhteyttä</Button>
+      <Button onClick={() => setPage("Projects")}>Projektit</Button>
+      <Button>Taidot</Button>
+      <Button>Ota yhteyttä</Button>
     </div>
   );
 };

@@ -1,11 +1,9 @@
 import { FC } from "react";
 
-interface ProjectsProps {
-    
-}
- 
+interface ProjectsProps {}
+
 const Projects: FC<ProjectsProps> = () => {
-    return <div>Projectspage!!!</div>;
-}
- 
+  return <div>Projectspage!!!</div>;
+};
+
 export default Projects;

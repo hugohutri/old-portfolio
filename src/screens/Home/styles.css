@@ -1,7 +1,7 @@
 .name {
   width: 100%;
   text-align: center;
-  font-size: max(min(13vw, 170px), 50px);
+  font-size: max(min(13vw, 160px), 50px);
   font-family: "Roboto", sans-serif;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -47,13 +47,6 @@
   100% {
     transform: scale(1.14);
   }
-}
-
-.page {
-  padding: 3% !important;
-  height: max(100vh, 100%);
-  backdrop-filter: blur(13px);
-  background-color: #0008;
 }
 
 .center-content {

@@ -1,18 +1,19 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomeScreen from './Home/Home';
-import ProjectsScreen from './Projects/Projects';
+import React from "react";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import "skeleton-css/css/normalize.css";
+import "skeleton-css/css/skeleton.css";
+import PageContainer from "./PageContainer";
+import Projects from "./Projects/Projects";
 
-import "skeleton-css/css/skeleton.css"
-import "skeleton-css/css/normalize.css"
+// Add Route here if needed
 
 const Root = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
-      <Route path="/" element={<HomeScreen />} />
-      <Route path="/projects" element={<ProjectsScreen />} />
+      <Route path="/" element={<PageContainer />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/moi" element={<p>Moi</p>} />
     </Routes>
   </BrowserRouter>
 );
-
 export default Root;

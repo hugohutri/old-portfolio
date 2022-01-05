@@ -10,14 +10,14 @@ interface HomeProps {}
 
 const Home: FC<HomeProps> = () => {
   return (
-    <div className="container page">
+    <>
       <Name />
       <ProfilePicture />
       <AboutMe />
       <SocialMedia />
       <hr />
       <ButtonRow />
-    </div>
+    </>
   );
 };
 
