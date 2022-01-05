@@ -20,7 +20,7 @@ const Root = () => (
   <BrowserRouter basename="/portfolio">
     <Routes>
       <Route path="/" element={<PageContainer />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="/portfolio/projects" element={<Projects />} />
       <Route path="/moi" element={<p>Moi</p>} />
     </Routes>
   </BrowserRouter>
