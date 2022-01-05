@@ -17,9 +17,9 @@ import Projects from "./Projects/Projects";
 */
 
 const Root = () => (
-  <BrowserRouter basename="/portfolio">
+  <BrowserRouter>
     <Routes>
-      <Route path="/" element={<PageContainer />} />
+      <Route path="/portfolio" element={<PageContainer />} />
       <Route path="/portfolio/projects" element={<Projects />} />
       <Route path="/moi" element={<p>Moi</p>} />
     </Routes>
