@@ -17,11 +17,11 @@ import Projects from "./Projects/Projects";
 */
 
 const Root = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
-      <Route path="/portfolio" element={<PageContainer />} />
-      <Route path="/portfolio/projects" element={<Projects />} />
-      <Route path="/moi" element={<p>Moi</p>} />
+      <Route path="/" element={<PageContainer />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/portfolio/moi" element={<p>Moi</p>} />
     </Routes>
   </BrowserRouter>
 );
