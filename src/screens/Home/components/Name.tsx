@@ -7,8 +7,8 @@ const StyledName = styled.div`
   text-align: center;
   font-size: max(min(13vw, 160px), 50px);
   font-family: "Roboto", sans-serif;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 `;
 
 const NAME = "Hugo Hutri";
