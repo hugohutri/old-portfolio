@@ -17,11 +17,12 @@ interface ButtonProps {
   onClick?: () => any;
   href?: string;
   children: string | React.ReactChildren;
+  disabled?: boolean;
 }
 
 const Button: FC<ButtonProps> = (props) => {
   return (
-    <div className="four columns">
+    <div className="four columns" style={{ opacity: props.disabled ? 0.3 : 1 }}>
       <StyledButton
         className="button u-full-width"
         onClick={props.onClick}

@@ -24,6 +24,7 @@ const SocialMedia: FC<{}> = () => {
         url="https://fi.linkedin.com/in/hugo-hutri-9401a815b"
         bgColor="#dedede"
       />
+      <SocialIcon url="https://www.instagram.com/huugooh" bgColor="#dedede" />
     </div>
   );
 };

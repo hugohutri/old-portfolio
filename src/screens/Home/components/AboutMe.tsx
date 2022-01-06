@@ -17,7 +17,7 @@ const AboutMe: FC<{}> = () => {
       <p>
         Hei! Olen Hugo, ja olen ohjelmisto&shy;kehittäjä Lappeen&shy;rannasta.
         Teen pääasiassa Front-end -kehitystä, mutta myös Back-end ja
-        mobiili&shy;puolta. Koulu&shy;tukseltani olen Tieto&shy; tekniikan
+        mobiili&shy;puolta. Koulu&shy;tukseltani olen Tieto&shy;tekniikan
         kandidaatti ja olen opiskellut ohjelmisto&shy; tuotannon lisäksi
         data-analytiikkaa.
       </p>
