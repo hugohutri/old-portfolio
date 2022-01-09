@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   -o-backdrop-filter: blur(13px);
   backdrop-filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='3'%20/></filter></svg>#blur");
   backdrop-filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
-  background-color: #0009;
+  background-color: #000c;
 `;
 
 const Background = styled.div`
