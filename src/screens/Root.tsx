@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "skeleton-css/css/normalize.css";
 import "skeleton-css/css/skeleton.css";
 import PageContainer from "./PageContainer";
