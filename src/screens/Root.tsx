@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import "skeleton-css/css/normalize.css";
 import "skeleton-css/css/skeleton.css";
 import PageContainer from "./PageContainer";
@@ -15,11 +15,12 @@ import PageContainer from "./PageContainer";
 */
 
 const Root = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<PageContainer />} />
+      <Route path="/moi" element={<div>Moi</div>} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default Root;
